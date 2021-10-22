@@ -1,154 +1,50 @@
-* {
-  margin: 0;
-}
-@font-face {
-  font-family: designer;
-  src: url('./images/DESIGNER.otf');
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Edson Souza - DoWhile 2021 - NLW</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span class="faixa2"></span>
+          <span class="faixa"></span>
+          <span>
+            <img src="./images/build.svg" alt="Selo Rocketseat" />
+          </span>
+          <img
+            src="https://picsum.photos/200"
+            alt="Edson souza"
+            id="avatarImg"
+          />
+        </div>
+        <h1 id="userName">Edinho</h1>
+        <a id="userLink" href="https://github.com" target="_blank">
+          <img src="./images/github.svg" alt="icone github" />
+          <span id="userLogin">github</span></a
+        >
+        <h1 id="socialMedia">Programador em Desenvolvimento</h1>
+        <p id="userBio">Estou começando minha carreira como programador.</p>
+        <ul id="socialLinks" class="redesocial">
+          <li class="instagram">
+            <a href="https://www.instagram.com/person_grafica/" target="_blank"
+              ><img src="./images/instagram.svg" alt="Icone Instagram"
+            /></a>
+          </li>
+          <li class="youtube">
+            <a href="https://www.youtube.com/edinh0xd" target="_blank"
+              ><img src="./images/youtube.svg" alt="Icone Youtube"
+            /></a>
+          </li>
+        </ul>
+        <!-- <p id="nivel">#RumoAoPróximoNível</p> -->
+      </div>
+    </main>
 
-html,
-body {
-  height: 100%;
-}
-
-body {
-  --black: hsl(240, 6%, 13%);
-  --gray: hsl(240, 9%, 89%);
-
-  /* overflow: hidden; */
-  background: radial-gradient(ellipse at bottom, #4b48f0 0%, #0c0233 70%);
-  display: grid;
-  place-items: center;
-  background-size: 300% 300%;
-  animation: colors 15s ease infinite;
-}
-
-main {
-  background-image: url('./images/background.svg');
-  width: 375px;
-  height: 712px;
-}
-.container {
-  max-width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-
-  color: var(--gray);
-}
-.faixa {
-  position: absolute;
-  width: 80px;
-  height: 1500px;
-  background-color: chocolate;
-  background: linear-gradient(to top, rgb(204, 10, 10) 20%, rgb(255, 255, 25));
-  right: 0;
-  left: 0;
-  margin-top: -100rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  place-items: center;
-  justify-items: center;
-}
-.faixa2 {
-  position: absolute;
-  width: 100px;
-  height: 20px;
-  background-color: rgb(0, 0, 0);
-  right: 0;
-  left: 0;
-  margin-top: -7rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  place-items: center;
-  justify-items: center;
-}
-.avatar {
-  position: relative;
-  width: 10rem;
-  margin: 11.5rem auto 0;
-}
-.avatar span {
-  position: absolute;
-  top: -15px;
-  z-index: 1;
-}
-.avatar > img {
-  width: 10rem;
-  height: 11.2rem;
-  object-fit: cover;
-
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 30%,
-    100% 70%,
-    70% 100%,
-    30% 100%,
-    0% 70%,
-    0% 30%
-  );
-}
-
-h1 {
-  font-family: designer;
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-#userName {
-  font-family: designer;
-  margin-top: 0.5rem;
-}
-
-#socialMedia {
-  font-size: 0.9rem;
-  margin-top: 1.5rem;
-}
-
-#userBio {
-  color: var(--gray);
-  margin-top: 0.8rem;
-  font-size: 0.8rem;
-  text-decoration: none;
-}
-
-a {
-  margin-top: 0.25rem;
-  color: var(--gray);
-  font-size: 1.2rem;
-  text-shadow: 4px 2px 10px rgb(0, 0, 0);
-  text-decoration: none;
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  align-items: center;
-}
-a:hover {
-  color: rgb(132, 124, 245);
-}
-
-ul.redesocial {
-  margin-top: 5rem;
-
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 0.5rem;
-
-  justify-content: center;
-}
-
-@keyframes colors {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+    <script src="main.js"></script>
+  </body>
+</html>
