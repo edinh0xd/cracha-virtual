@@ -3,7 +3,7 @@
 }
 @font-face {
   font-family: designer;
-  src: url('src/DESIGNER.otf');
+  src: url('./images/DESIGNER.otf');
 }
 
 html,
